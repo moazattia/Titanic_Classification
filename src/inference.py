@@ -15,7 +15,7 @@ def predict_survival(passengers: List[PassengerData]):
         base_data[i]["family_size"] = p.family_size
         base_data[i]["alone"] = p.alone
 
-    # To DF for all columns
+    # To DF for all column
     df = pd.DataFrame(base_data)
 
     df_processed = preprocessor.transform(df)
