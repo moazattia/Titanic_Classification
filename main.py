@@ -42,3 +42,4 @@ async def classify(passengers: List[PassengerData], api_key: str = Depends(verif
     except Exception as e:
         raise HTTPException(
             status_code=500, detail=f"Error making predictions {str(e)}")
+# End of file My_Projects/Titanic/main.py
